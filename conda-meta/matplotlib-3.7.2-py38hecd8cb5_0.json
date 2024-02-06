@@ -1,0 +1,33 @@
+{
+  "build": "py38hecd8cb5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base >=3.7.2,<3.7.3.0a0",
+    "python >=3.8,<3.9.0a0",
+    "tornado >=5"
+  ],
+  "extracted_package_dir": "/Users/sri/miniconda3/pkgs/matplotlib-3.7.2-py38hecd8cb5_0",
+  "files": [],
+  "fn": "matplotlib-3.7.2-py38hecd8cb5_0.conda",
+  "license": "LicenseRef-PSF-based",
+  "link": {
+    "source": "/Users/sri/miniconda3/pkgs/matplotlib-3.7.2-py38hecd8cb5_0",
+    "type": 1
+  },
+  "md5": "d649224545549d4bbb3cfe0b4f3d2c0b",
+  "name": "matplotlib",
+  "package_tarball_full_path": "/Users/sri/miniconda3/pkgs/matplotlib-3.7.2-py38hecd8cb5_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "matplotlib",
+  "sha256": "166ccdeb4bbfbe354ce8ebfda7186892c3a170b0c5e6e08b40cbaa3d3d7442f0",
+  "size": 9074,
+  "subdir": "osx-64",
+  "timestamp": 1693813098000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/matplotlib-3.7.2-py38hecd8cb5_0.conda",
+  "version": "3.7.2"
+}

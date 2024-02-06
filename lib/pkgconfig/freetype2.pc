@@ -1,0 +1,14 @@
+prefix=/Users/sri/miniconda3/envs/PFAT
+exec_prefix=/Users/sri/miniconda3/envs/PFAT
+libdir=/Users/sri/miniconda3/envs/PFAT/lib
+includedir=/Users/sri/miniconda3/envs/PFAT/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: 
+Libs: -L/Users/sri/miniconda3/envs/PFAT/lib -lfreetype
+Libs.private: -lz -L/Users/sri/miniconda3/envs/PFAT/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

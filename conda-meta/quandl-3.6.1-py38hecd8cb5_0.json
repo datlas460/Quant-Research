@@ -1,0 +1,648 @@
+{
+  "build": "py38hecd8cb5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "inflection >=0.3.1",
+    "more-itertools",
+    "numpy >=1.8",
+    "pandas >=0.14",
+    "python >=3.8,<3.9.0a0",
+    "python-dateutil",
+    "requests >=2.7.0",
+    "six"
+  ],
+  "extracted_package_dir": "/Users/sri/miniconda3/pkgs/quandl-3.6.1-py38hecd8cb5_0",
+  "files": [
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/INSTALLER",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/LICENSE.txt",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/METADATA",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/RECORD",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/REQUESTED",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/WHEEL",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/direct_url.json",
+    "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/top_level.txt",
+    "lib/python3.8/site-packages/quandl/__init__.py",
+    "lib/python3.8/site-packages/quandl/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/api_config.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/bulkdownload.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/connection.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/export_table.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/get.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/get_point_in_time.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/get_table.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/message.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/util.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/__pycache__/version.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/api_config.py",
+    "lib/python3.8/site-packages/quandl/bulkdownload.py",
+    "lib/python3.8/site-packages/quandl/connection.py",
+    "lib/python3.8/site-packages/quandl/errors/__init__.py",
+    "lib/python3.8/site-packages/quandl/errors/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/errors/__pycache__/quandl_error.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/errors/quandl_error.py",
+    "lib/python3.8/site-packages/quandl/export_table.py",
+    "lib/python3.8/site-packages/quandl/get.py",
+    "lib/python3.8/site-packages/quandl/get_point_in_time.py",
+    "lib/python3.8/site-packages/quandl/get_table.py",
+    "lib/python3.8/site-packages/quandl/message.py",
+    "lib/python3.8/site-packages/quandl/model/__init__.py",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/data.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/data_list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/data_mixin.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/database.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/dataset.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/datatable.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/merged_data_list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/merged_dataset.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/model_base.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/model_list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/paginated_list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/__pycache__/point_in_time.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/model/data.py",
+    "lib/python3.8/site-packages/quandl/model/data_list.py",
+    "lib/python3.8/site-packages/quandl/model/data_mixin.py",
+    "lib/python3.8/site-packages/quandl/model/database.py",
+    "lib/python3.8/site-packages/quandl/model/dataset.py",
+    "lib/python3.8/site-packages/quandl/model/datatable.py",
+    "lib/python3.8/site-packages/quandl/model/merged_data_list.py",
+    "lib/python3.8/site-packages/quandl/model/merged_dataset.py",
+    "lib/python3.8/site-packages/quandl/model/model_base.py",
+    "lib/python3.8/site-packages/quandl/model/model_list.py",
+    "lib/python3.8/site-packages/quandl/model/paginated_list.py",
+    "lib/python3.8/site-packages/quandl/model/point_in_time.py",
+    "lib/python3.8/site-packages/quandl/operations/__init__.py",
+    "lib/python3.8/site-packages/quandl/operations/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/operations/__pycache__/data_list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/operations/__pycache__/get.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/operations/__pycache__/list.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/operations/__pycache__/operation.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/operations/data_list.py",
+    "lib/python3.8/site-packages/quandl/operations/get.py",
+    "lib/python3.8/site-packages/quandl/operations/list.py",
+    "lib/python3.8/site-packages/quandl/operations/operation.py",
+    "lib/python3.8/site-packages/quandl/util.py",
+    "lib/python3.8/site-packages/quandl/utils/__init__.py",
+    "lib/python3.8/site-packages/quandl/utils/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/utils/__pycache__/api_key_util.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/utils/__pycache__/request_type_util.cpython-38.pyc",
+    "lib/python3.8/site-packages/quandl/utils/api_key_util.py",
+    "lib/python3.8/site-packages/quandl/utils/request_type_util.py",
+    "lib/python3.8/site-packages/quandl/version.py"
+  ],
+  "fn": "quandl-3.6.1-py38hecd8cb5_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/Users/sri/miniconda3/pkgs/quandl-3.6.1-py38hecd8cb5_0",
+    "type": 1
+  },
+  "md5": "29d5030e62f113dee01c4a56ade46041",
+  "name": "quandl",
+  "package_tarball_full_path": "/Users/sri/miniconda3/pkgs/quandl-3.6.1-py38hecd8cb5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "97c9e9368a8d91746384fc27881545aba2feb4b7f98e12b9021d2c001f9b125a",
+        "sha256_in_prefix": "97c9e9368a8d91746384fc27881545aba2feb4b7f98e12b9021d2c001f9b125a",
+        "size_in_bytes": 1050
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c859c1bccd8b30d472f7563a8f065c047c4115b59beacfcc6bb4a5b51638220b",
+        "sha256_in_prefix": "c859c1bccd8b30d472f7563a8f065c047c4115b59beacfcc6bb4a5b51638220b",
+        "size_in_bytes": 1296
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fb4c08751e22447a1b359369ec699d7b516948cefb8e63fa3b986361a349a2f8",
+        "sha256_in_prefix": "fb4c08751e22447a1b359369ec699d7b516948cefb8e63fa3b986361a349a2f8",
+        "size_in_bytes": 5210
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "sha256_in_prefix": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "1f768d84d9fca81e68556dde5220f295f79d56bdd124212ecb32386c66520959",
+        "sha256_in_prefix": "1f768d84d9fca81e68556dde5220f295f79d56bdd124212ecb32386c66520959",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "lib/python3.8/site-packages/Quandl-3.6.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ad2144cbc69a0231ecfc9286b39807a5a9e82eaf7db807e2c88cde7668a0fb86",
+        "sha256_in_prefix": "ad2144cbc69a0231ecfc9286b39807a5a9e82eaf7db807e2c88cde7668a0fb86",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "52fd32874ebb08406b456ad965582496b79aa46b892a8fc354c0a132913fe297",
+        "sha256_in_prefix": "52fd32874ebb08406b456ad965582496b79aa46b892a8fc354c0a132913fe297",
+        "size_in_bytes": 529
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "99df61dd73064374603f3d44f1184e38d688dc0ea7feb3c79f33e774e7d2d8f1",
+        "sha256_in_prefix": "99df61dd73064374603f3d44f1184e38d688dc0ea7feb3c79f33e774e7d2d8f1",
+        "size_in_bytes": 716
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/api_config.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "4918dfc009003da7f03ebf4a064f3f6947ff93a4cab272df9cce4c79ee09af5c",
+        "sha256_in_prefix": "4918dfc009003da7f03ebf4a064f3f6947ff93a4cab272df9cce4c79ee09af5c",
+        "size_in_bytes": 1250
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/bulkdownload.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "48ec92dcb900b237b2101e58c6ed4dd515f7290038a22ab41d82faf8ef6226d1",
+        "sha256_in_prefix": "48ec92dcb900b237b2101e58c6ed4dd515f7290038a22ab41d82faf8ef6226d1",
+        "size_in_bytes": 1083
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/connection.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "460455834f290ef956125a26b7f58ab6d1c4e772b922c180269fa4d6699c3bad",
+        "sha256_in_prefix": "460455834f290ef956125a26b7f58ab6d1c4e772b922c180269fa4d6699c3bad",
+        "size_in_bytes": 3300
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/export_table.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "b421bbf31221cda0de5a44be43cc67dbaabbe933bef8e898e42e7e6a11075f21",
+        "sha256_in_prefix": "b421bbf31221cda0de5a44be43cc67dbaabbe933bef8e898e42e7e6a11075f21",
+        "size_in_bytes": 993
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/get.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "b7e708d9e5332c7039c784315bb9c0a5ba9835a52a28b99d5be69484f3459245",
+        "sha256_in_prefix": "b7e708d9e5332c7039c784315bb9c0a5ba9835a52a28b99d5be69484f3459245",
+        "size_in_bytes": 3222
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/get_point_in_time.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb4c62e3d7c24e780e90bb688f1a5e0ca45a19eea0473073c1062641e580c29b",
+        "sha256_in_prefix": "fb4c62e3d7c24e780e90bb688f1a5e0ca45a19eea0473073c1062641e580c29b",
+        "size_in_bytes": 1619
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/get_table.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "efc43d30f08cd530d69619abb5d7570f0ba177abea572704e61248e657132f8a",
+        "sha256_in_prefix": "efc43d30f08cd530d69619abb5d7570f0ba177abea572704e61248e657132f8a",
+        "size_in_bytes": 1040
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/message.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "1d34059da5cc70f7fa6dc624d9f518c6b0fddf78cd4e08d4e8e8d1d92ff4a26d",
+        "sha256_in_prefix": "1d34059da5cc70f7fa6dc624d9f518c6b0fddf78cd4e08d4e8e8d1d92ff4a26d",
+        "size_in_bytes": 2712
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/util.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "9085e9feb02c6a06be8120486d3ea789fe638c5e99d7ffd824c3ec23081b5b27",
+        "sha256_in_prefix": "9085e9feb02c6a06be8120486d3ea789fe638c5e99d7ffd824c3ec23081b5b27",
+        "size_in_bytes": 3936
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/__pycache__/version.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "a54ac48780ff2aa4282b771af04c2fcbb533472b72f0751ba7ee3ca114f451b3",
+        "sha256_in_prefix": "a54ac48780ff2aa4282b771af04c2fcbb533472b72f0751ba7ee3ca114f451b3",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/api_config.py",
+        "path_type": "hardlink",
+        "sha256": "de7d2f2e7a1b2d975854d3848da8265bd0d29f9fa66e4271440e7daf01d67d74",
+        "sha256_in_prefix": "de7d2f2e7a1b2d975854d3848da8265bd0d29f9fa66e4271440e7daf01d67d74",
+        "size_in_bytes": 998
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/bulkdownload.py",
+        "path_type": "hardlink",
+        "sha256": "c5350c96d25274201f8d293ce4710ab7ebe867538156aa02ba396f8e17de6d70",
+        "sha256_in_prefix": "c5350c96d25274201f8d293ce4710ab7ebe867538156aa02ba396f8e17de6d70",
+        "size_in_bytes": 940
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/connection.py",
+        "path_type": "hardlink",
+        "sha256": "295420a5077c97d109bfbf19a47c5682b7294f76503ecccbad41854f12534d54",
+        "sha256_in_prefix": "295420a5077c97d109bfbf19a47c5682b7294f76503ecccbad41854f12534d54",
+        "size_in_bytes": 3906
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/errors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/errors/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "402e6a007455a215a0c3f611373f4ad053ed4456c6d8400248c9861ba73c793c",
+        "sha256_in_prefix": "402e6a007455a215a0c3f611373f4ad053ed4456c6d8400248c9861ba73c793c",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/errors/__pycache__/quandl_error.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "ced1f8ec28c79971dfcb0da7accd261ff3c0fb0f04db479bd60e7fd23d08bf82",
+        "sha256_in_prefix": "ced1f8ec28c79971dfcb0da7accd261ff3c0fb0f04db479bd60e7fd23d08bf82",
+        "size_in_bytes": 2388
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/errors/quandl_error.py",
+        "path_type": "hardlink",
+        "sha256": "8a0d245fe293e0d49756b23bde1fc4ae86856bb4c3e422c2764fda3d032f1f43",
+        "sha256_in_prefix": "8a0d245fe293e0d49756b23bde1fc4ae86856bb4c3e422c2764fda3d032f1f43",
+        "size_in_bytes": 1719
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/export_table.py",
+        "path_type": "hardlink",
+        "sha256": "a91582ef6e1f7812e76d73039b473f050ef2dc07843aa9ff5491ad3e8717666b",
+        "sha256_in_prefix": "a91582ef6e1f7812e76d73039b473f050ef2dc07843aa9ff5491ad3e8717666b",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/get.py",
+        "path_type": "hardlink",
+        "sha256": "ccc533014c42a3a62245fb87569da8c79490a3151c241ce51d1a026cc30d32a7",
+        "sha256_in_prefix": "ccc533014c42a3a62245fb87569da8c79490a3151c241ce51d1a026cc30d32a7",
+        "size_in_bytes": 3945
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/get_point_in_time.py",
+        "path_type": "hardlink",
+        "sha256": "f31a09697a626e60933d18c6a151c4820fd79f41b24e6d6562360caa209e6b4e",
+        "sha256_in_prefix": "f31a09697a626e60933d18c6a151c4820fd79f41b24e6d6562360caa209e6b4e",
+        "size_in_bytes": 2178
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/get_table.py",
+        "path_type": "hardlink",
+        "sha256": "2eb9153732a8f6fe2c489af04f1a01cb1598fbee3fd4215d2e0c5a0a0b57feb0",
+        "sha256_in_prefix": "2eb9153732a8f6fe2c489af04f1a01cb1598fbee3fd4215d2e0c5a0a0b57feb0",
+        "size_in_bytes": 1305
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/message.py",
+        "path_type": "hardlink",
+        "sha256": "07692487dc25939100a468aab032da178a3421a52d02d0e862eb8b343f708f3b",
+        "sha256_in_prefix": "07692487dc25939100a468aab032da178a3421a52d02d0e862eb8b343f708f3b",
+        "size_in_bytes": 2474
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "0da6bc55058464492a9557da910500940b40e43a5a319e24b1ea0ad9cfbfe7c5",
+        "sha256_in_prefix": "0da6bc55058464492a9557da910500940b40e43a5a319e24b1ea0ad9cfbfe7c5",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/data.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "49477904354379683a74b0018575013140722d21939c021ca44f449b1ee79db2",
+        "sha256_in_prefix": "49477904354379683a74b0018575013140722d21939c021ca44f449b1ee79db2",
+        "size_in_bytes": 1286
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/data_list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "3824395ad3921f2dc34a3c8653bbf72ae219c20d38f944e5617d39e816b31b27",
+        "sha256_in_prefix": "3824395ad3921f2dc34a3c8653bbf72ae219c20d38f944e5617d39e816b31b27",
+        "size_in_bytes": 391
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/data_mixin.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "45943abcf8f089bac088347bc64c887d9fa53dc6c7aa3008845e895cd5aa4f67",
+        "sha256_in_prefix": "45943abcf8f089bac088347bc64c887d9fa53dc6c7aa3008845e895cd5aa4f67",
+        "size_in_bytes": 1807
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/database.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "0c4b5886de40ee2bd761e063c7e804a0e3326cc21095a931febee5eba5f1f135",
+        "sha256_in_prefix": "0c4b5886de40ee2bd761e063c7e804a0e3326cc21095a931febee5eba5f1f135",
+        "size_in_bytes": 2453
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/dataset.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "e033a44e6d9a83f668db94fb1fb09fdd8566cca3892570439c54e5473a9992ca",
+        "sha256_in_prefix": "e033a44e6d9a83f668db94fb1fb09fdd8566cca3892570439c54e5473a9992ca",
+        "size_in_bytes": 2216
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/datatable.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b81d311a2d52557df070c815bb03151bbb2cceffafcbd8aa830c49c8ddadba3",
+        "sha256_in_prefix": "7b81d311a2d52557df070c815bb03151bbb2cceffafcbd8aa830c49c8ddadba3",
+        "size_in_bytes": 2941
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/merged_data_list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "714de611746726f5bd0a6f2ecbd50e0cd2e1631202dcbea8e5ed32749c08bf6d",
+        "sha256_in_prefix": "714de611746726f5bd0a6f2ecbd50e0cd2e1631202dcbea8e5ed32749c08bf6d",
+        "size_in_bytes": 1449
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/merged_dataset.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "10b019407bcc4a546003a08b955c7c67cd4e5e97ec716cef1a6ed6f8b7ad4c8c",
+        "sha256_in_prefix": "10b019407bcc4a546003a08b955c7c67cd4e5e97ec716cef1a6ed6f8b7ad4c8c",
+        "size_in_bytes": 7225
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/model_base.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "adf7e1c8a0b9a31f7892b179238def26740fa34f29fb257d26b82da8b3c53579",
+        "sha256_in_prefix": "adf7e1c8a0b9a31f7892b179238def26740fa34f29fb257d26b82da8b3c53579",
+        "size_in_bytes": 1331
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/model_list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "98cc322024e1a912e797c2e4d40fffe921f3aefbce8f10abf7fd73a70fd8d977",
+        "sha256_in_prefix": "98cc322024e1a912e797c2e4d40fffe921f3aefbce8f10abf7fd73a70fd8d977",
+        "size_in_bytes": 1934
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/paginated_list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2f299460e416b4ceb08cc61e30b9f44223075787f8e4328816e781ad4c13357",
+        "sha256_in_prefix": "c2f299460e416b4ceb08cc61e30b9f44223075787f8e4328816e781ad4c13357",
+        "size_in_bytes": 540
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/__pycache__/point_in_time.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "353c7140e85cf4c6caf700ff231ab91edd8863685c1b92ce144000de74ff771b",
+        "sha256_in_prefix": "353c7140e85cf4c6caf700ff231ab91edd8863685c1b92ce144000de74ff771b",
+        "size_in_bytes": 1479
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/data.py",
+        "path_type": "hardlink",
+        "sha256": "63c9a70ccb6cbbeb47ab82acf3cbd6a4ac0afdbf3dbd1397cb12a52cbf1d1336",
+        "sha256_in_prefix": "63c9a70ccb6cbbeb47ab82acf3cbd6a4ac0afdbf3dbd1397cb12a52cbf1d1336",
+        "size_in_bytes": 1380
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/data_list.py",
+        "path_type": "hardlink",
+        "sha256": "ddaa106d640d57286e056bd16ccbe58c72143ed0d3ad6e96af854af62d16f0f4",
+        "sha256_in_prefix": "ddaa106d640d57286e056bd16ccbe58c72143ed0d3ad6e96af854af62d16f0f4",
+        "size_in_bytes": 117
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/data_mixin.py",
+        "path_type": "hardlink",
+        "sha256": "0bd4be4cb579017def586c1a1c3ced04f93bf264e7c0544bc0ca1436e9eb704e",
+        "sha256_in_prefix": "0bd4be4cb579017def586c1a1c3ced04f93bf264e7c0544bc0ca1436e9eb704e",
+        "size_in_bytes": 2098
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/database.py",
+        "path_type": "hardlink",
+        "sha256": "ab8ced612b9092fe2663a49687dcdbd931a03b8825cb6c302ed764540b550b39",
+        "sha256_in_prefix": "ab8ced612b9092fe2663a49687dcdbd931a03b8825cb6c302ed764540b550b39",
+        "size_in_bytes": 2164
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/dataset.py",
+        "path_type": "hardlink",
+        "sha256": "742772f054d7879940ec267e4f59ced2d4fc25198ec482e7e275b17df401a5fb",
+        "sha256_in_prefix": "742772f054d7879940ec267e4f59ced2d4fc25198ec482e7e275b17df401a5fb",
+        "size_in_bytes": 2176
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/datatable.py",
+        "path_type": "hardlink",
+        "sha256": "ce5ae42002e9c5374e626b18ba118d7128a58f209e7d3eb6ed44e40190b8c103",
+        "sha256_in_prefix": "ce5ae42002e9c5374e626b18ba118d7128a58f209e7d3eb6ed44e40190b8c103",
+        "size_in_bytes": 2913
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/merged_data_list.py",
+        "path_type": "hardlink",
+        "sha256": "e77e065213d58a55a3584fc954ab0c3a58c1759e757145d01171cbccbe022699",
+        "sha256_in_prefix": "e77e065213d58a55a3584fc954ab0c3a58c1759e757145d01171cbccbe022699",
+        "size_in_bytes": 1208
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/merged_dataset.py",
+        "path_type": "hardlink",
+        "sha256": "00c2843c622a389d5ea4c1cbbe314ffb642417f4712d377b08af3460f428ef8a",
+        "sha256_in_prefix": "00c2843c622a389d5ea4c1cbbe314ffb642417f4712d377b08af3460f428ef8a",
+        "size_in_bytes": 9646
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/model_base.py",
+        "path_type": "hardlink",
+        "sha256": "553e127750e2151a8a81aed5249f8ad9276655736241884ebf7f504c2780aa26",
+        "sha256_in_prefix": "553e127750e2151a8a81aed5249f8ad9276655736241884ebf7f504c2780aa26",
+        "size_in_bytes": 792
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/model_list.py",
+        "path_type": "hardlink",
+        "sha256": "eb07d16f3d924e8fe1aecc6b4e8e05897a143012c30c519b0949f9f0799bf391",
+        "sha256_in_prefix": "eb07d16f3d924e8fe1aecc6b4e8e05897a143012c30c519b0949f9f0799bf391",
+        "size_in_bytes": 1602
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/paginated_list.py",
+        "path_type": "hardlink",
+        "sha256": "613af95c53b1c2e754b30bbcaee8d8007d8da6098f577fe4d8975055e2cd62dc",
+        "sha256_in_prefix": "613af95c53b1c2e754b30bbcaee8d8007d8da6098f577fe4d8975055e2cd62dc",
+        "size_in_bytes": 168
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/model/point_in_time.py",
+        "path_type": "hardlink",
+        "sha256": "03eda29a62c4b6cdb1a1a2e32a092106f9f9ebf213611143ce5fc0e5c84605fb",
+        "sha256_in_prefix": "03eda29a62c4b6cdb1a1a2e32a092106f9f9ebf213611143ce5fc0e5c84605fb",
+        "size_in_bytes": 1242
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8261891b7c9b075ca7e3015eebdce113ed349b90fb74af8998d8c6bd24cc4cf",
+        "sha256_in_prefix": "e8261891b7c9b075ca7e3015eebdce113ed349b90fb74af8998d8c6bd24cc4cf",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__pycache__/data_list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "d989206c15aa869859917b1cdbcc00e72ec97b1980d2a634c0ff5db6b47b189c",
+        "sha256_in_prefix": "d989206c15aa869859917b1cdbcc00e72ec97b1980d2a634c0ff5db6b47b189c",
+        "size_in_bytes": 2122
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__pycache__/get.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "20354ef6d5db6b7992e7c13c9ed4074e29c8526462098bd0791c31a30c73d4d9",
+        "sha256_in_prefix": "20354ef6d5db6b7992e7c13c9ed4074e29c8526462098bd0791c31a30c73d4d9",
+        "size_in_bytes": 1122
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__pycache__/list.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb93ce234e6d2c1ab3981afe9fec3bbf659b7c185732dab544ec93cd2708cf6b",
+        "sha256_in_prefix": "fb93ce234e6d2c1ab3981afe9fec3bbf659b7c185732dab544ec93cd2708cf6b",
+        "size_in_bytes": 1730
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/__pycache__/operation.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "3ee1d569b6b7839c4a342ecbff2b03c534965599cca2f83dea2acef9030e90d8",
+        "sha256_in_prefix": "3ee1d569b6b7839c4a342ecbff2b03c534965599cca2f83dea2acef9030e90d8",
+        "size_in_bytes": 693
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/data_list.py",
+        "path_type": "hardlink",
+        "sha256": "432afb261d5827808e3568b6443abe19ffb2684c52f92449b357675581ba601f",
+        "sha256_in_prefix": "432afb261d5827808e3568b6443abe19ffb2684c52f92449b357675581ba601f",
+        "size_in_bytes": 2160
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/get.py",
+        "path_type": "hardlink",
+        "sha256": "a235eb1cd7c54b2a734543ea30c2eddf9dd51a100066029fde624f23b14ec3a5",
+        "sha256_in_prefix": "a235eb1cd7c54b2a734543ea30c2eddf9dd51a100066029fde624f23b14ec3a5",
+        "size_in_bytes": 789
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/list.py",
+        "path_type": "hardlink",
+        "sha256": "5fc45c90d6b51d5ad6f20c47979371bf6f3bb9d68af4e713a25e88a6da1c2333",
+        "sha256_in_prefix": "5fc45c90d6b51d5ad6f20c47979371bf6f3bb9d68af4e713a25e88a6da1c2333",
+        "size_in_bytes": 1447
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/operations/operation.py",
+        "path_type": "hardlink",
+        "sha256": "ec7071eb2dbf6b92eed3d8ca15e8afd3a252a6ec5e74735bebd089b50f909e84",
+        "sha256_in_prefix": "ec7071eb2dbf6b92eed3d8ca15e8afd3a252a6ec5e74735bebd089b50f909e84",
+        "size_in_bytes": 255
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/util.py",
+        "path_type": "hardlink",
+        "sha256": "4a41138edb8cfe329b545ce49750b77980d15c9ee88eecb4cfa22b97d585f316",
+        "sha256_in_prefix": "4a41138edb8cfe329b545ce49750b77980d15c9ee88eecb4cfa22b97d585f316",
+        "size_in_bytes": 4865
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "509596cbbc96cd9f6f062768dd782503f64dc88ed1fa1b87e80bcc41f71075ea",
+        "sha256_in_prefix": "509596cbbc96cd9f6f062768dd782503f64dc88ed1fa1b87e80bcc41f71075ea",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/__pycache__/api_key_util.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "38867cb73d940fbf33b70e804c13d1a139cd458105e617efc0df995a555e9c0b",
+        "sha256_in_prefix": "38867cb73d940fbf33b70e804c13d1a139cd458105e617efc0df995a555e9c0b",
+        "size_in_bytes": 578
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/__pycache__/request_type_util.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "028b37d50e83ccfc14aeff351f08b9c29e33f7949a2a632045c8c905935182b6",
+        "sha256_in_prefix": "028b37d50e83ccfc14aeff351f08b9c29e33f7949a2a632045c8c905935182b6",
+        "size_in_bytes": 1055
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/api_key_util.py",
+        "path_type": "hardlink",
+        "sha256": "48c3a059409e4a0a042262d51383a58faea3b60b9e9fd51b3e5b9ffe610b5888",
+        "sha256_in_prefix": "48c3a059409e4a0a042262d51383a58faea3b60b9e9fd51b3e5b9ffe610b5888",
+        "size_in_bytes": 234
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/utils/request_type_util.py",
+        "path_type": "hardlink",
+        "sha256": "d1c193b623c163a69b596058daf98a4b00b09cc58ae50fb5913abbd7261e1424",
+        "sha256_in_prefix": "d1c193b623c163a69b596058daf98a4b00b09cc58ae50fb5913abbd7261e1424",
+        "size_in_bytes": 802
+      },
+      {
+        "_path": "lib/python3.8/site-packages/quandl/version.py",
+        "path_type": "hardlink",
+        "sha256": "76a637ed5b6176264c396dd2ef7f3553e505e9c89cc24583241f09d1ff65f5e2",
+        "sha256_in_prefix": "76a637ed5b6176264c396dd2ef7f3553e505e9c89cc24583241f09d1ff65f5e2",
+        "size_in_bytes": 18
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "quandl",
+  "sha256": "1eaebad3b689fc167589b24c1127acd314977c48f12663b27994be63f21f2d90",
+  "size": 54120,
+  "subdir": "osx-64",
+  "timestamp": 1614799164000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/quandl-3.6.1-py38hecd8cb5_0.conda",
+  "version": "3.6.1"
+}

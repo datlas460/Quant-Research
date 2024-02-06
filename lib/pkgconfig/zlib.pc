@@ -1,0 +1,13 @@
+prefix=/Users/sri/miniconda3/envs/PFAT
+exec_prefix=/Users/sri/miniconda3/envs/PFAT
+libdir=/Users/sri/miniconda3/envs/PFAT/lib
+sharedlibdir=/Users/sri/miniconda3/envs/PFAT/lib
+includedir=/Users/sri/miniconda3/envs/PFAT/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

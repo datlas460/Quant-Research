@@ -1,0 +1,230 @@
+{
+  "build": "hcf5af9b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=14.0.6",
+    "lz4-c >=1.9.4,<1.10.0a0",
+    "zlib-ng >=2.0.7,<2.1.0a0",
+    "zstd >=1.5.2,<1.6.0a0"
+  ],
+  "extracted_package_dir": "/Users/sri/miniconda3/pkgs/c-blosc2-2.12.0-hcf5af9b_0",
+  "files": [
+    "include/b2nd.h",
+    "include/blosc2.h",
+    "include/blosc2/blosc2-common.h",
+    "include/blosc2/blosc2-export.h",
+    "include/blosc2/blosc2-stdio.h",
+    "include/blosc2/codecs-registry.h",
+    "include/blosc2/filters-registry.h",
+    "include/blosc2/tuners-registry.h",
+    "lib/cmake/Blosc2/Blosc2Config.cmake",
+    "lib/cmake/Blosc2/Blosc2ConfigVersion.cmake",
+    "lib/cmake/Blosc2/Blosc2Targets-release.cmake",
+    "lib/cmake/Blosc2/Blosc2Targets.cmake",
+    "lib/cmake/Blosc2/Modules/FindIPP.cmake",
+    "lib/cmake/Blosc2/Modules/FindLZ4.cmake",
+    "lib/cmake/Blosc2/Modules/FindSIMD.cmake",
+    "lib/cmake/Blosc2/Modules/FindZLIB_NG.cmake",
+    "lib/cmake/Blosc2/Modules/FindZSTD.cmake",
+    "lib/cmake/Blosc2/Modules/toolchain-aarch64.cmake",
+    "lib/cmake/Blosc2/Modules/toolchain-armhf.cmake",
+    "lib/cmake/Blosc2/Modules/toolchain-armsf.cmake",
+    "lib/libblosc2.2.12.0.dylib",
+    "lib/libblosc2.2.dylib",
+    "lib/libblosc2.dylib",
+    "lib/pkgconfig/blosc2.pc"
+  ],
+  "fn": "c-blosc2-2.12.0-hcf5af9b_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/Users/sri/miniconda3/pkgs/c-blosc2-2.12.0-hcf5af9b_0",
+    "type": 1
+  },
+  "md5": "020e2bdbe090d0c7bce046fe23539dd0",
+  "name": "c-blosc2",
+  "package_tarball_full_path": "/Users/sri/miniconda3/pkgs/c-blosc2-2.12.0-hcf5af9b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/b2nd.h",
+        "path_type": "hardlink",
+        "sha256": "5c665a9cd68b16429a9dddda78ec54863702854170166c9c84d475c42bdbc549",
+        "sha256_in_prefix": "5c665a9cd68b16429a9dddda78ec54863702854170166c9c84d475c42bdbc549",
+        "size_in_bytes": 21335
+      },
+      {
+        "_path": "include/blosc2.h",
+        "path_type": "hardlink",
+        "sha256": "13000f4a2fdeb89db191378d1f5bd33dc5cc2e2b186fdb82ac2410af4d027d99",
+        "sha256_in_prefix": "13000f4a2fdeb89db191378d1f5bd33dc5cc2e2b186fdb82ac2410af4d027d99",
+        "size_in_bytes": 94908
+      },
+      {
+        "_path": "include/blosc2/blosc2-common.h",
+        "path_type": "hardlink",
+        "sha256": "f7215809cd8833ce8e1f943a88be50c9c7d3d4331bd6896f822e67b0c7053e90",
+        "sha256_in_prefix": "f7215809cd8833ce8e1f943a88be50c9c7d3d4331bd6896f822e67b0c7053e90",
+        "size_in_bytes": 2643
+      },
+      {
+        "_path": "include/blosc2/blosc2-export.h",
+        "path_type": "hardlink",
+        "sha256": "97cd252d9897b04cf613b112d58e913ca721fb64d788b55bcecdde92957957aa",
+        "sha256_in_prefix": "97cd252d9897b04cf613b112d58e913ca721fb64d788b55bcecdde92957957aa",
+        "size_in_bytes": 1811
+      },
+      {
+        "_path": "include/blosc2/blosc2-stdio.h",
+        "path_type": "hardlink",
+        "sha256": "26c94f65e18b4e086f022545b0ff5097756b116918d17a907f1af9223e64d44a",
+        "sha256_in_prefix": "26c94f65e18b4e086f022545b0ff5097756b116918d17a907f1af9223e64d44a",
+        "size_in_bytes": 1328
+      },
+      {
+        "_path": "include/blosc2/codecs-registry.h",
+        "path_type": "hardlink",
+        "sha256": "860cf74d774db46d5bc840063b2f37ca88241daa6af1ededf4e3c12f5ed2ea9b",
+        "sha256_in_prefix": "860cf74d774db46d5bc840063b2f37ca88241daa6af1ededf4e3c12f5ed2ea9b",
+        "size_in_bytes": 1068
+      },
+      {
+        "_path": "include/blosc2/filters-registry.h",
+        "path_type": "hardlink",
+        "sha256": "feffbd58985018bc15d2e3fe18e204418e0b4ea1cbbd9696e30d5725501e7ed7",
+        "sha256_in_prefix": "feffbd58985018bc15d2e3fe18e204418e0b4ea1cbbd9696e30d5725501e7ed7",
+        "size_in_bytes": 911
+      },
+      {
+        "_path": "include/blosc2/tuners-registry.h",
+        "path_type": "hardlink",
+        "sha256": "cf132011a7758381daacd227974a22124b2fdd1cae146e11a3cf3f293615ad9a",
+        "sha256_in_prefix": "cf132011a7758381daacd227974a22124b2fdd1cae146e11a3cf3f293615ad9a",
+        "size_in_bytes": 796
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Blosc2Config.cmake",
+        "path_type": "hardlink",
+        "sha256": "1159839ed6ff76c6ed337a3c225ac594ef460e99ac447d540989012953ead3e6",
+        "sha256_in_prefix": "1159839ed6ff76c6ed337a3c225ac594ef460e99ac447d540989012953ead3e6",
+        "size_in_bytes": 2410
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Blosc2ConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "ed95c2654b3d54646e2fc175685754d46f3fb86439165b26c31d9130ecc10e3f",
+        "sha256_in_prefix": "ed95c2654b3d54646e2fc175685754d46f3fb86439165b26c31d9130ecc10e3f",
+        "size_in_bytes": 2765
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Blosc2Targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "63b4232d77b84db68387c0ca74edddbe7d1603b4bfdfd20ae3a68e2447bdf5f2",
+        "sha256_in_prefix": "63b4232d77b84db68387c0ca74edddbe7d1603b4bfdfd20ae3a68e2447bdf5f2",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Blosc2Targets.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_10r22bi2jm/croot/c-blosc2_1705431311938/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "da17d3bc1e506294d146907b00625da0a1de5939fd5f2619a7c2fb402e01ad4c",
+        "sha256_in_prefix": "ebf8839dc0a8f624f2d6c9bac98a9253fdd4184d497085974bfa86da31f57ad1",
+        "size_in_bytes": 5826
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/FindIPP.cmake",
+        "path_type": "hardlink",
+        "sha256": "07f1fc8be0572af2ba1bba023f97068bf2980e6f2bb954f5524d9b6036950bc0",
+        "sha256_in_prefix": "07f1fc8be0572af2ba1bba023f97068bf2980e6f2bb954f5524d9b6036950bc0",
+        "size_in_bytes": 2091
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/FindLZ4.cmake",
+        "path_type": "hardlink",
+        "sha256": "3b7e3abc0a69cc5961a53e3e7c2b8f64930c7d4b1135eca36e59c1c35beea88a",
+        "sha256_in_prefix": "3b7e3abc0a69cc5961a53e3e7c2b8f64930c7d4b1135eca36e59c1c35beea88a",
+        "size_in_bytes": 278
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/FindSIMD.cmake",
+        "path_type": "hardlink",
+        "sha256": "5c14422f8eafd2515d1177c075673cf1d06ffb5dc971ec30f61a8fa51bcaabbf",
+        "sha256_in_prefix": "5c14422f8eafd2515d1177c075673cf1d06ffb5dc971ec30f61a8fa51bcaabbf",
+        "size_in_bytes": 2210
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/FindZLIB_NG.cmake",
+        "path_type": "hardlink",
+        "sha256": "2df350db8800c7b92a0af9544d0c9342800e5d2268dff5767f99c2718ccc5976",
+        "sha256_in_prefix": "2df350db8800c7b92a0af9544d0c9342800e5d2268dff5767f99c2718ccc5976",
+        "size_in_bytes": 2446
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/FindZSTD.cmake",
+        "path_type": "hardlink",
+        "sha256": "4fbd83ef1ea265e5f84f60ea23e1bc7061ac3114d2b30e790904ab552799a1ad",
+        "sha256_in_prefix": "4fbd83ef1ea265e5f84f60ea23e1bc7061ac3114d2b30e790904ab552799a1ad",
+        "size_in_bytes": 204
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/toolchain-aarch64.cmake",
+        "path_type": "hardlink",
+        "sha256": "06ccb918a3ebf1e1ea2989d8665efe99890602e6608001fed9323fc526d002bb",
+        "sha256_in_prefix": "06ccb918a3ebf1e1ea2989d8665efe99890602e6608001fed9323fc526d002bb",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/toolchain-armhf.cmake",
+        "path_type": "hardlink",
+        "sha256": "7260b7c8e6f4875ba40d36466e36fdc516c9c3691a2255803a3a8d51c6864b37",
+        "sha256_in_prefix": "7260b7c8e6f4875ba40d36466e36fdc516c9c3691a2255803a3a8d51c6864b37",
+        "size_in_bytes": 995
+      },
+      {
+        "_path": "lib/cmake/Blosc2/Modules/toolchain-armsf.cmake",
+        "path_type": "hardlink",
+        "sha256": "cb027a7fa4feda5c0fe55e9b453dfa30a9fc403e176759a29a3e42bb760b271b",
+        "sha256_in_prefix": "cb027a7fa4feda5c0fe55e9b453dfa30a9fc403e176759a29a3e42bb760b271b",
+        "size_in_bytes": 1097
+      },
+      {
+        "_path": "lib/libblosc2.2.12.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "ef653c566f1f66476362e9efb0fb4b29f9cfa68a46e427ce8bf72e5e67be26d3",
+        "sha256_in_prefix": "ef653c566f1f66476362e9efb0fb4b29f9cfa68a46e427ce8bf72e5e67be26d3",
+        "size_in_bytes": 737036
+      },
+      {
+        "_path": "lib/libblosc2.2.dylib",
+        "path_type": "softlink",
+        "sha256": "ef653c566f1f66476362e9efb0fb4b29f9cfa68a46e427ce8bf72e5e67be26d3",
+        "size_in_bytes": 737036
+      },
+      {
+        "_path": "lib/libblosc2.dylib",
+        "path_type": "softlink",
+        "sha256": "ef653c566f1f66476362e9efb0fb4b29f9cfa68a46e427ce8bf72e5e67be26d3",
+        "size_in_bytes": 737036
+      },
+      {
+        "_path": "lib/pkgconfig/blosc2.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_10r22bi2jm/croot/c-blosc2_1705431311938/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "3460c0bd0dead5b6f44a2c52707d6ddb8d5f1ebbe1ebf8f6b97052373ef4f62a",
+        "sha256_in_prefix": "f99f8cc5fb543f4d8ff9fb7dae04ec31f70c266b9d85f28780694e29aafc53df",
+        "size_in_bytes": 565
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "45866052ec3233ece38c59465620af7bd328ba2f40fd00e1c8a8f8b0950229f5",
+  "size": 319032,
+  "subdir": "osx-64",
+  "timestamp": 1705431471000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/c-blosc2-2.12.0-hcf5af9b_0.conda",
+  "version": "2.12.0"
+}
