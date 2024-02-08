@@ -24,4 +24,24 @@ class MomVectorBacktester(object):
         raw['return']= np.log(raw/raw.shift(1))
         self.data=raw
 
+    def run_strategy(self, momentum=1):
+        '''backtests the trading strategy
+        '''
+        self.momentum = momentum
+        data = self.data.copy().dropna()
+        data['position']=np.sign((data['return'].rolling(momentum)).mean())
+        data['strategy']=data['position'].shift(1) * data['return']
+
+        #determine when a trade takes places
+        data.dropna(inplace=True)
+        trades = data['position'].diff().fillna(0) != 0
+
+        #subtract the transaction costs
+        data['strategy'][trades] -= self.tc
+        data['creturns'] = self.amount * data['return'].cumsum().apply(np.exp)
+        data['cstrategy'] = self.amount * data['strategy'].cumsum().apply(np.exp)
+
+
+
+
 
