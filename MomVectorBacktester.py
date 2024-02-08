@@ -40,6 +40,45 @@ class MomVectorBacktester(object):
         data['strategy'][trades] -= self.tc
         data['creturns'] = self.amount * data['return'].cumsum().apply(np.exp)
         data['cstrategy'] = self.amount * data['strategy'].cumsum().apply(np.exp)
+        self.results = data
+
+        #abs performance of strategy
+        aperf = self.results['cstrategy'].iloc[-1]
+
+        #over/under performance of the strategy
+        operf = aperf - self.results['creturns'].iloc[-1]
+
+        return round(aperf, 2), round(operf, 2)
+
+    def plot_results(self):
+        '''plots cum performance of strategy'''
+        if self.results is None:
+            print('Run strategy before plotting. No data available')
+        title = '%s | TC = %.4f' % (self.symbol, self.tc)
+        self.results[['creturns','cstrategy']].plot(title=title, figsize=(10,6))
+        plt.show()
+
+if __name__ == '__main__':
+    # mombt = MomVectorBacktester('XAU=', '2010-1-1', '2020-12-31', 10000, 0.0)
+    # print(mombt.run_strategy())
+    # print(mombt.run_strategy(momentum=2))
+    # mombt = MomVectorBacktester('XAU=', '2010-1-1', '2020-12-31', 10000, 0.1)
+    # print(mombt.run_strategy(2))
+
+    mombt = MomVectorBacktester('XAU=', '2010-1-1', '2020-12-31', 10000, 0.0)
+    mombt.run_strategy(momentum=3)
+    print(mombt.run_strategy(momentum=3))
+    mombt.plot_results()
+
+    mombt= MomVectorBacktester('XAU=', '2010-1-1', '2020-12-31', 10000, 0.001)
+    mombt.run_strategy(momentum=3)
+    print(mombt.run_strategy(momentum=3))
+    mombt.plot_results()
+
+
+
+
+
 
 
 
