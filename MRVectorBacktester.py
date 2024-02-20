@@ -6,17 +6,21 @@ class MRVectorBacktester(MomVectorBacktester):
 
         data = self.data.copy().dropna()
         data['sma'] = data['price'].rolling(SMA).mean()
-        data['distance'] = data['price']=data['sma']
+        data['distance'] = data['price'] - data['sma']
         data.dropna(inplace=True)
 
         #sell signals
-        data['position'] = np.where(data['distance'] > threshold, -1, np.nan)
+        data['position'] = np.where(data['distance'] > threshold
+                                    , -1, np.nan)
 
         #buy signals
-        data['position'] = np.where(data['distance'] < -threshold, 1, data['position'])
+        data['position'] = np.where(data['distance'] < -threshold
+                                    , 1, data['position'])
 
         #crossing of current price and SMA (zero distance)
-        data['position'] = np.where(data['distance'] * data['distance'].shift(1) < 0, 0, data['position'])
+        data['position'] = np.where(data['distance'] *
+                                    data['distance'].shift(1) < 0,
+                                    0, data['position'])
 
         data['position'] = data['position'].ffill().fillna(0)
         data['strategy'] = data['position'].shift(1) * data['return']
@@ -35,16 +39,18 @@ class MRVectorBacktester(MomVectorBacktester):
         #out/under performance of strategy
         operf = aperf - self.results['creturns'].iloc[-1]
 
-        return round(aperf, 2), round(operf, 2)
+        return (round(aperf, 2), round(operf, 2))
+        #, round(self.results['creturns'].iloc[-1],2), self.tc)
 
 if __name__ == '__main__':
         mrbt = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.0)
         print(mrbt.run_strategy(SMA=25, threshold=5))
 
-        mrbt = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.001)
-        print(mrbt.run_strategy(SMA=25, threshold=5))
+        mrbt2 = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.001)
+        print(mrbt2.run_strategy(SMA=25, threshold=5))
 
-        print(mrbt.run_strategy(SMA=42, threshold=7.5))
+        print(mrbt2.run_strategy(SMA=42, threshold=7.5))
+
 
 
 
