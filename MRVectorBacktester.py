@@ -27,5 +27,26 @@ class MRVectorBacktester(MomVectorBacktester):
         #subtract transaction costs from return when trade takes place
         data['strategy'][trades] -= self.tc
         data['creturns'] = self.amount * data['return'].cumsum().apply(np.exp)
+        data['cstrategy'] = self.amount * data['strategy'].cumsum().apply(np.exp)
+        self.results = data
+
+        #absolute performance of strategy
+        aperf = self.results['cstrategy'].iloc[-1]
+        #out/under performance of strategy
+        operf = aperf - self.results['creturns'].iloc[-1]
+
+        return round(aperf, 2), round(operf, 2)
+
+if __name__ == '__main__':
+        mrbt = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.0)
+        print(mrbt.run_strategy(SMA=25, threshold=5))
+
+        mrbt = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.001)
+        print(mrbt.run_strategy(SMA=25, threshold=5))
+
+        print(mrbt.run_strategy(SMA=42, threshold=7.5))
+
+
+
 
 
