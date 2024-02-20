@@ -52,6 +52,12 @@ if __name__ == '__main__':
     mrb.data['position'].iloc[SMA:].plot(ylim=[-1.1,1.1], figsize=(10,6))
     plt.show()
 
+    mrb.data['strategy']= mrb.data['position'].shift(1) * mrb.data['return']
+    mrb.data[['return', 'strategy']].dropna().cumsum().apply(np.exp).plot(figsize=(10,6))
+    plt.show()
+
+
+
 
 
 
