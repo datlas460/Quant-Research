@@ -74,6 +74,7 @@ if __name__ == '__main__':
     mombt.run_strategy(momentum=3)
     print(mombt.run_strategy(momentum=3))
     mombt.plot_results()
+    plt.show()
 
 
 
