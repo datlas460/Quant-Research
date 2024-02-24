@@ -28,13 +28,13 @@ plt.figure(figsize=(10, 6))
 plt.plot(x, y, 'bo', label='data')
 plt.plot(x, np.polyval(reg, x), 'r', lw = 2.5, label='linear regression')
 plt.legend(loc=0)
-
+plt.show()
 
 #the same as above but enlarged x domain
-plt.figure(figize=(10,6))
-plt.plot(x, y, 'bo', label='data')
+plt.figure(figsize=(10,6))
+plt.plot(x, y, 'bo', label='data with 20')
 xn = np.linspace(0, 20)
-plt.plot(xn, np.polyval(reg, xn), 'r', lw=2.5, label='linear regression')
+plt.plot(xn, np.polyval(reg, xn), 'r', lw=2.5, label='linear regression with extended x')
 plt.legend(loc=0)
 plt.show()
 
