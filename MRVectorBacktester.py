@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 from MomVectorBacktester import *
 
 class MRVectorBacktester(MomVectorBacktester):
@@ -49,7 +51,10 @@ if __name__ == '__main__':
         mrbt2 = MRVectorBacktester('GDX', '2010-1-1', '2020-12-31', 10000, 0.001)
         print(mrbt2.run_strategy(SMA=25, threshold=5))
 
-        print(mrbt2.run_strategy(SMA=42, threshold=7.5))
+        print(mrbt2.run_strategy(SMA=43, threshold=7.5))
+
+        mrbt2.plot_results()
+        plt.show()
 
 
 
