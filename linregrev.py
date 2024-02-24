@@ -38,4 +38,23 @@ plt.plot(xn, np.polyval(reg, xn), 'r', lw=2.5, label='linear regression with ext
 plt.legend(loc=0)
 plt.show()
 
+x = np.arange(12)
+
+#define the number of lags
+lags = 3
+
+#instantiates an ndarray with appropriate dimensions
+m = np.zeros((lags + 1, len(x) - lags))
+
+#define the targets dependant variable
+m[lags] = x[lags:]
+
+
+for i in range(lags):
+    #define basis vectors, independent variables
+    m[i] = x[i:i-lags]
+
+#show the transpose object of M
+m.T
+
 
