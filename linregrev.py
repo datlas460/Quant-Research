@@ -2,6 +2,7 @@ import os
 import random
 import numpy as np
 from pylab import mpl, plt
+import LRVectorBacktester as LR
 
 plt.style.use('seaborn')
 mpl.rcParams['savefig.dpi'] = 300
@@ -90,6 +91,57 @@ data[['price', 'prediction']].loc['2019-1-1':].plot(figsize=(10,6))
 plt.show()
 
 
+data['return'] = np.log(data['price']/ data['price'].shift(1))
+data.dropna(inplace=True)
 
+cols = []
+for lag in range(1, lags+1):
+    col = f'lag_{lag}'
+    data[col]=data['return'].shift(lag)
+    cols.append(col)
+data.dropna(inplace=True)
 
+reg = np.linalg.lstsq(data[cols], data['return'], rcond=None)[0]
+print(reg)
 
+data['prediction'] = np.dot(data[cols], reg)
+data[['return', 'prediction']].iloc[lags:].plot(figsize=(10,6))
+plt.show()
+
+hits = np.sign(data['return'] * data['prediction']).value_counts()
+print(hits)
+
+reg = np.linalg.lstsq(data[cols], np.sign(data['return']), rcond=None)[0]
+data['prediction'] = np.sign(np.dot(data[cols], reg))
+
+hits = np.sign(data['return'] * data['prediction']).value_counts()
+print(hits)
+data['strategy'] = data['return'] * data['prediction']
+data[['return', 'strategy']].sum().apply(np.exp)
+data[['return', 'strategy']].dropna().cumsum().apply(np.exp).plot(figsize=(10, 6))
+print(data['return'])
+print(data['strategy'])
+plt.show()
+
+lrbt = LR.LRVectorBacktester('EUR=', '2010-1-1', '2019-12-31',
+                             10000, 0.0)
+
+lrbt.run_strategy('2010-1-1', '2019-12-31',
+                  '2010-1-1', '2019-12-31', lags=5)
+
+lrbt.run_strategy('2010-1-1', '2017-12-31',
+                  '2018-1-1', '2019-12-31', lags=5)
+print(lrbt.run_strategy('2010-1-1', '2017-12-31',
+                        '2018-1-1', '2019-12-31', lags=5))
+
+lrbt.plot_results()
+
+lrbt = LR.LRVectorBacktester('GDX', '2010-1-1', '2019-12-31',
+                             10000, 0.002)
+lrbt.run_strategy('2010-1-1', '2019-12-31',
+                  '2010-1-1', '2019-12-31', lags=7)
+
+lrbt.run_strategy('2010-1-1', '2014-12-31',
+                  '2015-1-1', '2019-12-31', lags=7)
+
+lrbt.plot_results()
