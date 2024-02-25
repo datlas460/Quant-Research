@@ -9,7 +9,8 @@ mpl.rcParams['font.family'] = 'serif'
 os.environ['PYTHONHASHSEED'] = '0'
 
 #print evenly spaced grid of floats for x values between 0 and 10
-x = np.linspace(0,10)
+x = np.linspace(0,10, 10)
+print(x)
 
 def set_seeds(seed=100):
     random.seed(seed)
@@ -33,7 +34,7 @@ plt.show()
 #the same as above but enlarged x domain
 plt.figure(figsize=(10,6))
 plt.plot(x, y, 'bo', label='data with 20')
-xn = np.linspace(0, 20)
+xn = np.linspace(0, 20, 10)
 plt.plot(xn, np.polyval(reg, xn), 'r', lw=2.5, label='linear regression with extended x')
 plt.legend(loc=0)
 plt.show()
@@ -56,5 +57,39 @@ for i in range(lags):
 
 #show the transpose object of M
 m.T
+
+reg = np.linalg.lstsq(m[:lags].T, m[lags], rcond=None)
+reg
+
+import pandas as pd
+
+raw = pd.read_csv('http://hilpisch.com/pyalgo_eikon_eod_data.csv',
+                  index_col=0,
+                  parse_dates=True).dropna()
+
+symbol = 'EUR='
+
+data = pd.DataFrame(raw[symbol])
+
+data.rename(columns={symbol: 'price'}, inplace=True)
+
+data
+
+lags = 5
+cols = []
+for lag in range(1, lags+1):
+    col = f'lag_{lag}'
+    data[col] = data['price'].shift(lag)
+    cols.append(col)
+
+data.dropna(inplace=True)
+reg = np.linalg.lstsq(data[cols], data['price'], rcond=None)[0]
+
+data['prediction'] = np.dot(data[cols], reg)
+data[['price', 'prediction']].loc['2019-1-1':].plot(figsize=(10,6))
+plt.show()
+
+
+
 
 
