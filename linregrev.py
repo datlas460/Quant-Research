@@ -145,3 +145,8 @@ lrbt.run_strategy('2010-1-1', '2014-12-31',
                   '2015-1-1', '2019-12-31', lags=7)
 
 lrbt.plot_results()
+
+#START OF SCIKIT LEARN LINEAR REGRESSION
+'''
+This will be the start of the second half of linear regression practice using SciKit Learn
+'''
